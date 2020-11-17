@@ -1,0 +1,23 @@
+{
+  "name": "final-portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o public/css/ -- recursive"
+  },
+  "author": "Matthew Beadman",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.12",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
+  },
+  "keywords": []
+}
