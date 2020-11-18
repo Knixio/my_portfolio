@@ -57,7 +57,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("/public/img/photo1601172081951.jpg");
+      background: url("../img/photo1601172081951.jpg");
       border-radius: 50%;
       background-size: cover;
       border: solid 3px #6cd4b5; }
@@ -152,7 +152,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/public/img/pexels-negative-space-34088.jpg);
+    background: url(../img/pexels-negative-space-34088.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
