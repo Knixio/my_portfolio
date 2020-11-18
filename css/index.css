@@ -152,7 +152,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/pexels-negative-space-34088.jpg);
+    background: url(../public/img/pexels-negative-space-34088.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
