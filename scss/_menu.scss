@@ -99,7 +99,7 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
-
+    //current page set to secondary color
     &.current > a {
       color: $secondary-color;
     }
@@ -114,16 +114,61 @@
       color: #fff;
       text-decoration: none;
       @include easeOut;
-
+      //change text color to hover-cover when hovering over text field
       &:hover {
-        color: $secondary-color;
+        color: $hover-color;
       }
     }
   }
 }
 
-//delay each nav item slide by 0.1s
-// @for $i from 1 through 4 {
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 4px solid;
+    background-size: 50%;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $hover-color 8px solid;
+  }
+}
+
+//footer
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 6);
+  color: #fff;
+}
+
+// delay each nav item slide by 0.1s @for $i from 1 through 4 {
 //   .nav-item:nth-child(#{$i}) {
 //     transition-delay: $i * 0.1s;
 //   }

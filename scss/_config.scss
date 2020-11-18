@@ -8,7 +8,7 @@ $home-image: url(/public/img/pexels-negative-space-34088.jpg);
 $background-opacity: 0.8;
 
 @mixin easeOut {
-  transition: all 1s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 @mixin background {
