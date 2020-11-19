@@ -12,6 +12,7 @@
   "author": "Matthew Beadman",
   "license": "MIT",
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "express": "^4.17.1",
     "gh-pages": "^3.1.0",
     "knex": "^0.21.12",

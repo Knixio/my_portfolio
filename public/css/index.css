@@ -81,66 +81,6 @@
       .menu .nav-item .nav-link:hover {
         color: #ffa500; }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #6cd4b5 4px solid;
-    background-size: 50%; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #ffa500 8px solid; }
-
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 5px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #ffa500;
-      transition: all 0.7s ease-out; }
-
-.btn, .btn-dark, .btn-light {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #6cd4b5;
-    color: #fff; }
-
-.btn-dark {
-  background: black;
-  color: #fff; }
-
-.btn-light {
-  background: #c4c4c4;
-  color: #333; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #353535;
-  color: #fff; }
-
 * {
   box-sizing: border-box; }
 
@@ -207,6 +147,147 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 5px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #ffa500;
+      transition: all 0.7s ease-out; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #6cd4b5 4px solid;
+    background-size: 50%; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: #ffa500 8px solid; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #6cd4b5;
+    color: #fff; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
+
+section {
+  height: 60vh;
+  width: 60%;
+  color: #444;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  border: #6cd4b5 solid 4px;
+  border-radius: 10px;
+  margin-bottom: 20px; }
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px; }
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid;
+  margin-top: 5px; }
+
+textarea {
+  resize: vertical; }
+
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  background-color: #aaaaaa;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px; }
+  button[type="submit"]:hover {
+    opacity: 0.8;
+    background: #ffa500;
+    transition: all 0.7s ease-out; }
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px; }
+
+#status.success {
+  background-color: #83f37f;
+  color: #444;
+  animation: status 4s ease forwards; }
+
+#status.error {
+  background-color: #da5e5e;
+  color: #fff;
+  animation: status 4s ease forwards; }
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all; }
+  90% {
+    opacity: 1;
+    pointer-events: all; }
+  100% {
+    opacity: 0;
+    pointer-events: none; } }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #353535;
+  color: #fff; }
 
 @media screen and (min-width: 1171px) {
   .projects {
