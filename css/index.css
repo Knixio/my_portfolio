@@ -204,7 +204,7 @@ main {
 
 section {
   height: 60vh;
-  width: 60%;
+  width: 100%;
   color: #444;
   border-radius: 3px;
   display: flex;
